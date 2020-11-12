@@ -21,7 +21,7 @@ header{
 
 .navbar-1{
     height: 75%;
-    width: 60%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -85,6 +85,21 @@ header{
     text-align: start;
 }
 
+.montsec-image{
+    height: auto;
+    color: #1e2751;
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -1px;
+}
+
+.montsec-image img{
+    padding: 0;
+    max-height: 25px;
+    margin-right: 10px;
+}
+
+
 .navbar-1-1-1 ul{
     width: auto;
     display: flex;
@@ -96,14 +111,30 @@ header{
 .navbar-1-1-1 a {
     color: rgba(0,0,0,.5);
     font-size: 1em;
-    font-weight: bold;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.navbar-1-1-1 .active a {
+    color: #d84f16;
+    font-weight: 700;
+    font-size: 1em;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.navbar-1-1-1 a:hover {
+    color: #d84f16;
+    font-size: 1em;
     text-decoration: none;
     margin: 8px;
 }
 
 .navbar-2{
-    width: 60%;
-    height: 25%;
+    width: 80%;
+    height: 50px;
+    position: relative;
+    top: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -119,11 +150,18 @@ header{
     align-items: center;
     list-style-type: none;
     padding: 0;
-    margin: 10px;
 }
 
 .navbar-2 a{
-    padding: 15px;
+    color: white;
+    padding: 15px 25px;
+    line-height: 20px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.navbar-2 a:hover{
+    background-color: #d84f16;
     color: white;
     line-height: 24px;
     font-weight: 700;
@@ -137,10 +175,25 @@ main{
     background-image: url("../images/image5.webp");
     background-size: cover;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .main-info{
+    max-width: 30%;
+    margin-left: 15%;
+    padding: 15px;
     background-color: rgba(216,79,22,0.8);
+    color: white;
+}
+
+.main-info h5 {
+    font-size: 2.4em;
+    font-weight: 700;
+}
+
+.main-info a{
+    font-size: 1rem;
+    font-weight: 700;
+    color: white;
 }
