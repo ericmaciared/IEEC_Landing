@@ -21,7 +21,7 @@ header{
 
 .navbar-1{
     height: 75%;
-    width: 85%;
+    width: 70%;
     display: flex;
     padding-top: 10px;
     flex-direction: row;
@@ -68,7 +68,6 @@ header{
     background-color: #f2f2f2;
     border: none;
     border-radius: 30px;
-    margin-right: 20px;
     padding: .375rem .75rem;
     font-size: 1em;
     outline: none;
@@ -132,7 +131,7 @@ header{
 }
 
 .navbar-2{
-    width: 85%;
+    width: 70%;
     height: 50px;
     position: relative;
     top: 15px;
@@ -181,9 +180,9 @@ main{
 }
 
 .main-info{
-    max-width: 30%;
+    max-width: 25%;
     margin-left: 22%;
-    padding: 50px 30px 20px 30px;
+    padding: 50px 50px 30px 30px;
     background-color: rgba(216,79,22,0.8);
     color: white;
 }
@@ -232,7 +231,7 @@ main{
 }
 
 .news-container{
-    width: 85%;
+    width: 70%;
     display: flex;
     flex-direction: column;
 }
@@ -318,7 +317,7 @@ main{
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .news-article{
@@ -358,7 +357,7 @@ footer h3{
 }
 
 .footer-1{
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -376,7 +375,7 @@ footer h3{
 }
 
 .footer-2{
-    width: 70%;
+    width: 75%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -385,4 +384,184 @@ footer h3{
 
 .footer-2 a{
     color: rgb(142, 146, 167);
+}
+
+
+/*MEDIA QUERIES*/
+
+/*Intermediate*/
+@media only screen and (min-width:850px) and (max-width: 1060px){
+    /*HEADER*/
+    header{
+        justify-content: center;
+    }
+
+    .navbar-1{
+        width: 85%;
+    }
+
+    .navbar-1-1-1 ul{
+        padding-left: 10px;
+    }
+
+    .navbar-2{
+        width: 85%;
+    }
+
+    /*MAIN*/
+    .main-info{
+        margin-left: 15%;
+        max-width: 35%;
+    }
+    
+    .main-info h5 {
+        font-size: 2em;
+    }
+    
+    /*NEWS*/
+    .news-container{
+        width: 85%;
+    }
+
+    .news-featured{
+        flex-wrap: wrap;
+    }
+
+    .news-featured figure{
+        padding-right: 0 ;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .news-featured aside{
+        max-width: 90%;
+    }
+
+    .news-general{
+        flex-wrap: wrap;
+    }
+    
+    .news-article{
+        padding: 0px 20px 40px 0px;
+        width: 45%;
+    }
+
+
+    /*FOOTER*/
+    .footer-1{
+        width: 85%;
+    }
+
+    .footer-2{
+        width: 85%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+}
+
+
+/*Small*/
+@media only screen and (max-width: 850px){
+    /*HEADER*/
+    header{
+        height: 15vh;
+    }
+
+    .navbar-1{
+        height: 90%;
+    }
+
+    .navbar-toggler{
+        max-height: 40px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .navbar-toggler a{
+        font-weight: 400;
+        font-size: 1.25rem;
+        color: #1e2751;
+    }
+
+   .navbar-toggler img{
+       padding: 0;
+       height: auto;
+       padding-left: 5px;
+       max-width: 30px;
+       color: #1e2751;
+
+   }
+
+    .navbar-1-1{
+        display: none;
+    }
+    .navbar-2{
+        display: none;
+    }
+
+    /*MAIN*/
+
+    main{
+        height: 85vh;
+    }
+    
+    .main-info{
+        margin-left: 15%;
+        max-width: 45%;
+    }
+    
+    .main-info h5 {
+        font-size: 2em;
+    }
+    
+    /*NEWS*/
+    .news-container{
+        width: 85%;
+    }
+
+    .news-featured{
+        flex-wrap: wrap;
+    }
+
+    .news-featured figure{
+        padding-right: 0 ;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .news-featured aside{
+        max-width: 90%;
+    }
+
+    .news-general{
+        flex-wrap: wrap;
+    }
+    
+    .news-article{
+        padding: 0px 20px 40px 0px;
+        width: 95%;
+    }
+
+    /*FOOTER*/
+    footer{
+        padding: 30px 0px;
+    }
+
+    .footer-1{
+        width: 85%;
+        flex-direction: column;
+    }
+    
+    .footer-2{
+        width: 85%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 1rem;
+    }
 }
